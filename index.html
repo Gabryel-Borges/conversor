@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(37, 34, 34);
+        }
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.4em;
+            color: #fff;
+            border: 1px solid black;
+            border-radius: 50px;
+            min-width: 300px;
+            max-width: 400px;
+            height: 500px;
+            background-image: linear-gradient(45deg, #2E294E 0.5%, #4E2F6D);
+
+        }
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+ 
+        label {
+            margin-left: 20px;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 180px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+           
+        }
+
+        input:active {
+            border: none;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            width: 100px;
+            height: 50px;
+            border: none;
+            border-radius: 30px;
+            background-color: #4E2F6D;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <label for="">Decimal</label>
+            <input type="text" id="decimal" onfocus="boxSelect('d')">
+        
+            <label for="binary">Binary</label>
+            <input type="text" id="binary" onfocus="boxSelect('b')">
+            <button onclick="converter()">Converter</button>
+        </div>
+    </main>
+    <script src="exercicio.js"></script>
+</body>
+</html>
